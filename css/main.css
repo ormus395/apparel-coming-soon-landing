@@ -91,7 +91,52 @@ body {
     border-radius: 24px;
     background-repeat: no-repeat;
     border: none;
+    cursor: pointer;
     height: 100%;
     margin: 0;
     width: 4rem;
+}
+
+.news-letter button:hover {
+    background-image: url(../images/icon-arrow.svg), linear-gradient(to right,  hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media only screen and (min-width: 760px) {
+    
+    main {
+        height: 100vh;
+        position: relative;
+
+    }
+
+    button {
+        width: 40%;
+    }
+
+    .container {
+        padding: 0 8rem;
+    }
+
+    .hero {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        z-index: 2;
+    }
+
+    .landing {
+        width: 50%;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .description {
+        text-align: left;
+    }
 }
